@@ -1,0 +1,35 @@
+//https://codeforces.com/problemset/problem/486/A
+//created by js0805
+#include<algorithm>
+#include<string>
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+#define ll long long int
+
+void solve()
+{
+   ll n;
+   cin >>n;
+   ll t;
+   if(n%2==0)
+ t = n/2;
+else
+   t = -(1+n)/2;
+  cout << t;
+
+
+}
+int main()
+{
+   ios_base::sync_with_stdio(0);
+   cin.tie(0);
+   cout.tie(0);
+  // ll t;
+   //cin >>t;
+   //for(int i=1;i<=t;i++)
+     // {
+   solve();
+
+//}   
+}
