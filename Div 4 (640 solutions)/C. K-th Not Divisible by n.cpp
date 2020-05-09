@@ -1,3 +1,5 @@
+https://codeforces.com/contest/1352/problem/C
+//created by js0805
 #include<algorithm>
 #include<string>
 #include<bits/stdc++.h>
