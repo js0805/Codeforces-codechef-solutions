@@ -1,4 +1,5 @@
 // Created by js0805
+//https://codeforces.com/problemset/problem/282/A
 #include <bits/stdc++.h>
 #include<algorithm>
 #include<vector>
