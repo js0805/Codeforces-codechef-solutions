@@ -1,0 +1,77 @@
+//https://www.codechef.com/AUG20B/problems/SKMP
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	#endif
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		string s,p;
+		cin>>s>>p;
+		int n=s.length(),m=p.length();
+		int a[26];
+		for(int i=0;i<26;i++){
+			a[i]=0;
+		}
+		for(int i=0;i<n;i++)
+		{
+			a[s[i]-'a']++;
+		}
+		for(int i=0;i<m;i++)
+		{
+			a[p[i]-'a']--;
+		}
+		string beg="",mins;
+		mins+=p;
+		for(int i=0;i<26;i++)
+		{
+			if(a[i]==1)
+				mins+='a'+i;
+			if(a[i]>1)
+				for(int j=0;j<a[i];j++)
+					mins+='a'+i;
+		}
+		for(int i=0;i<26;i++)
+		{
+			
+			if(a[i]==1)
+			{
+				beg+='a'+i;
+				string curr=beg;
+				curr+=p;
+				for(int k=i+1;k<26;k++)
+				{
+					if(a[k]==1)
+						curr+='a'+k;
+					if(a[k]>1)
+						for(int j=0;j<a[k];j++)
+							curr+='a'+k;
+				}
+				mins=min(mins,curr);
+			}
+			if(a[i]>1)
+			{
+				for(int l=0;l<a[i];l++)
+					beg+='a'+i;
+				string curr=beg;
+				curr+=p;
+				for(int k=i+1;k<26;k++)
+				{
+					if(a[k]==1)
+						curr+='a'+k;
+					if(a[k]>1)
+						for(int j=0;j<a[k];j++)
+							curr+='a'+k;
+				}
+				mins=min(mins,curr);
+			}
+		}
+		cout<<mins<<endl;
+	}
+}
