@@ -1,0 +1,1 @@
+[![Greetings](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/greetings.yml/badge.svg)](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/greetings.yml)
