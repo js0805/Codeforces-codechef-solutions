@@ -1,1 +1,2 @@
 [![Greetings](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/greetings.yml/badge.svg)](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/greetings.yml)
+[![Labeler](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/label.yml/badge.svg?branch=master)](https://github.com/js0805/Codeforces-codechef-solutions/actions/workflows/label.yml)
